@@ -1,23 +1,11 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Wishlist from "./pages/Wishlist";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import { useState } from "react";
+import "./App.css";
+import Router from "./routes";
 
 function App() {
-  return (
-    <Router>
-      <div>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/wishlist" element={<Wishlist />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
-  );
+  const [count, setCount] = useState(0);
+
+  return <Router />;
 }
 
 export default App;
