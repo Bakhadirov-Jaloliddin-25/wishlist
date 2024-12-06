@@ -13,7 +13,7 @@ const WishList = () => {
         <Products title="Wishlist" data={wishList} />
       ) : (
         <div className="text-center flex flex-col gap-6">
-          <p className="text-3xl text-[#56B280] font-bold">
+          <p className="text-3xl text-[#56B280] font-bold mt-16">
             Sizga yoqqanini qo'shing
           </p>
         </div>
