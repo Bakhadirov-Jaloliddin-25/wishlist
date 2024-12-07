@@ -1,7 +1,6 @@
 import React from "react";
 import { useStateValue } from "../../context";
 import Products from "../../components/products/Products";
-import LikesImg from "../../assets/images/likes.jpg";
 
 const WishList = () => {
   const { wishList } = useStateValue();
